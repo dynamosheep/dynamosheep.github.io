@@ -32,23 +32,23 @@ tags: [leetcode, algorithm, python, two-pointers]
 ---
 
 ## 구현 (Python)
+```python
+from typing import List
 
-    from typing import List
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        lastIdx = len(nums) - 1
+        checkIdx = 0
 
-    class Solution:
-        def removeElement(self, nums: List[int], val: int) -> int:
-            lastIdx = len(nums) - 1
-            checkIdx = 0
+        while checkIdx <= lastIdx:
+            if nums[checkIdx] == val:
+                nums[checkIdx] = nums[lastIdx]
+                lastIdx -= 1
+            else:
+                checkIdx += 1
 
-            while checkIdx <= lastIdx:
-                if nums[checkIdx] == val:
-                    nums[checkIdx] = nums[lastIdx]
-                    lastIdx -= 1
-                else:
-                    checkIdx += 1
-
-            return checkIdx
-
+        return checkIdx
+```
 ---
 
 ## 복잡도 분석
