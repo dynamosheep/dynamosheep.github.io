@@ -116,7 +116,7 @@ author:
   name             : "Dynamo Sheep"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Backend engineer sharing practical solutions and lessons learned from real-world problems."
-  location         : "Seoul, South Korea · Open to global opportunities""
+  location         : "Seoul, South Korea · Open to global opportunities"
   email            :
   links:
     - label: "Email"
